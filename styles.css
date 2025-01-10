@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.8s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #ff6600;
+}
+
+/* Hero Section */
+.hero {
+    background: url('free-photo-of-scenic-view-of-kiyomizu-dera-pagoda-in-kyoto.jpeg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    padding: 0 20px;
+    margin-top: 0px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0 30px;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #e55a00;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #ff6600;
+    text-transform: uppercase;
+}
+
+section .destination, 
+section .activity, 
+section .culture-item {
+    display: inline-block;
+    width: 25%;
+    margin: 20px;
+    background-color:linear-gradient(rgb(255, 255, 255) gray);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    vertical-align: top;
+}
+
+section .destination:hover, 
+section .activity:hover, 
+section .culture-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+section img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff6600;
+}
+
+section h3 {
+    font-size: 1.8rem;
+    margin: 15px;
+    color: #333;
+}
+
+section p {
+    margin: 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+section .cta-button {
+    display: inline-block;
+    margin: 15px;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+section .cta-button:hover {
+    background-color: #e55a00;
+}
+
+/* Footer Section */
+footer {
+    background-color: #525252;
+    color: #fff;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+footer form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+footer label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+footer input, 
+footer textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+footer button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+footer button:hover {
+    background-color: #e55a00;
+}
+
+#cn {
+    color: #ffffff;
+    background-color: #000000;
+    font-size:24px ;
+    height: auto;
+    padding-bottom: 2px;
+    padding-top: 8px;
+}
+
+#cn:hover{
+    color: #929292;
+}
+
+#map1 {
+    height:300px
+}
+#map {
+    display: grid;
+    height: 550px;
+    background-color: #eae9e9;
+}
+
+#mp {
+
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    padding: 1px;
+    border-bottom: #f9f9f9;
+    background-color: #9f9f9f;
+    margin-left: 30px;
+}
+
+/* Container styling for social icons */
+.social-icons {
+    display: flex;                
+    justify-content: center;      
+    gap: 15px;                    
+    margin-bottom: 0px;  
+    background: #edecec;             
+}
+
+/* Link styling */
+.social-icons a {
+    text-decoration: none;       
+    color: #6764b8;                  
+    font-size: 24px;              
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+/* Hover effect for links */
+.social-icons a:hover {
+    color: #007bff;               
+    transform: scale(1.2);        
+}
+
+/* Optional: Add a background effect */
+.social-icons a:hover i {
+    background-color: rgba(231, 232, 234, 0.1); 
+    border-radius: 50%;           
+    padding: 5px;                 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    section .destination, 
+    section .activity, 
+    section .culture-item {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 1200px) {
+    section .destination, 
+    section .activity, 
+    section .culture-item {
+        width: 45%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
